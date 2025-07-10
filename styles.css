@@ -1323,10 +1323,10 @@ p {
 }
 
 .form-row {
-  display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  height: 100%;
 }
 
 .form-group {
@@ -1513,6 +1513,8 @@ p {
     order: 2 !important;
     flex: 1 !important;
     max-width: 500px;
+    padding: 0;
+    margin: 0;
   }
 
   /* Contact info on the left */
@@ -1532,7 +1534,7 @@ p {
   
   .contact-section {
     position: relative;
-    padding-top: 140px;
+    padding-top: 0px;
   }
 }
 
@@ -1553,6 +1555,14 @@ p {
 
 /* Mobile optimization */
 @media (max-width: 767px) {
+  .form-group input {
+    height: 30px !important;
+  }
+
+  .form-group textarea {
+    height: 40px !important;
+  }
+
   .contact-section {
     padding: 60px 0;
   }
@@ -1564,7 +1574,8 @@ p {
   }
   
   .contact-form {
-    padding: 1.5rem;
+    padding-top: 1rem;
+    margin: 0;
     order: 1 !important;
     flex: none !important;
     width: 100% !important;
@@ -1756,11 +1767,6 @@ p {
   }
 
   .about-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
