@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatiya Labibah - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo-1.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Fatiya<span> Portofolio</span></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Let's work together on your next project!</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>I'm always interested in new opportunities. Feel free to reach out using the form or the contact
+                        details below.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>fatiyalabibah17@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-whatsapp"></i></div>
+                            <div class="contact-text">
+                                <h4>Whatsapp</h4>
+                                <p>+62 838-7713-6044</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Bogor, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Connect With Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/fatiya17" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i><span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/fatiya-labibah-547252293/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Tell me about your project or just say hello!"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span style="font-family: poppins;">Send Message</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>What kind of roles are you interested in?</h4>
+                <p>I am actively seeking internship or junior positions as a Frontend Engineer, Fullstack Developer, or Software Developer, where I can contribute to building user-centric applications and grow my skills.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What are your strongest technical skills?</h4>
+                <p>My core strengths are in web development using React.js and Laravel. I also have experience with cloud services like Microsoft Azure for integrations. I am a fast learner, always eager to adapt to new technologies required for a project.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Are you available for on-site work?</h4>
+                <p>Yes, I am ready and available to undertake an on-site internship program. I believe that working directly with a team is a great opportunity for collaboration and learning.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do you approach a new project?</h4>
+                <p>I focus on understanding the core requirements first. Then, I enjoy the process of designing a clean user interface and building a functional system, whether working independently or collaborating with a team to solve technical challenges.</p>
+            </div>
+             <div class="faq-item">
+                <h4>Why is your LinkedIn profile currently unavailable?</h4>
+                <p>My LinkedIn account is temporarily restricted due to a standard security measure from their side, which they indicate is for potential unauthorized activity. To regain access, I am currently undergoing their identity verification process. In the meantime, please feel free to connect with me via email or view my projects on GitHub.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fatiya<span> Portofolio</span></h3>
+                    <p>Informatics Engineering student passionate about developing efficient and user-friendly web
+                        applications.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/fatiya17" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fatiya-labibah-547252293/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/dambelsbru_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fatiya Labibah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
